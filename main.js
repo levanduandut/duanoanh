@@ -27,6 +27,36 @@ const app = {
     },
     songs: [
         {
+            name: "Em Đồng Ý",
+            singer: "Đức Phúc",
+            path: './music/EmDongY.mp3',
+            image: './img/EmDongY.jpg'
+        },
+        {
+            name: "Suýt Nữa Thĩ",
+            singer: "Oanh tèo",
+            path: './music/SuytNuaThi.mp3',
+            image: './img/SuytNuaThi.jpg'
+        },
+        {
+            name: "Vương",
+            singer: "Duản Hihi",
+            path: './music/Vuong.mp3',
+            image: './img/Vuong.jpg'
+        },
+        {
+            name: "Có một nơi như thế",
+            singer: "Phan Mạnh Quỳnh",
+            path: './music/CMNNT.mp3',
+            image: './img/CMNNT.jpg'
+        },
+        {
+            name: "Yêu Oanh Rất Nhiều",
+            singer: "Duẩn tèo",
+            path: './music/YERN.mp3',
+            image: './img/YERN.jpg'
+        },
+        {
             name: "Thiêu thân",
             singer: "Bray",
             path: './music/Bray.mp3',
@@ -45,32 +75,8 @@ const app = {
             image: './img/HoaiLam.png'
         },
         {
-            name: "Bài của Quân",
-            singer: "QUân AP",
-            path: './music/QuanAp.mp3',
-            image: './img/QuanAp.jpg'
-        },
-        {
-            name: "Thiêu thân",
-            singer: "Bray",
-            path: './music/Bray.mp3',
-            image: './img/Bray.jpg'
-        },
-        {
-            name: "Không gặp sẽ tốt hơn",
-            singer: "Hiền Hồ",
-            path: './music/HienHo.mp3',
-            image: './img/HienHo.jpg'
-        },
-        {
-            name: "Chia cách bình yên",
-            singer: "Hoài Lâm",
-            path: './music/HoaiLam.mp3',
-            image: './img/HoaiLam.png'
-        },
-        {
-            name: "Bài của Quân",
-            singer: "QUân AP",
+            name: "Anh chưa thương em đến vậy đâu",
+            singer: "Quân AP",
             path: './music/QuanAp.mp3',
             image: './img/QuanAp.jpg'
         },
@@ -267,7 +273,7 @@ const app = {
         this.handleEvents()
         this.loadCurrentSong()
         this.render()
-        btnRandom.classList.toggle("active", _this.isRandom)
+        btnRandom.classList.toggle("active", this.isRandom)
     }
 }
 app.start()
